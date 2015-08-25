@@ -1,0 +1,81 @@
+<html>
+<head>
+	<script>
+	var text="content of text here";
+	var delay=50;
+	var currentChar=1;
+	var destination="[not defined]";
+
+	function type()
+	{
+	  if (document.getElementById)
+	  {
+	    var dest=document.getElementById(destination);
+	    if (dest)
+	    {
+	      dest.innerHTML=text.substr(0, currentChar);
+	      currentChar++
+	      if (currentChar>text.length)
+	      {
+	        currentChar=1;
+	        setTimeout("type()", 5000);
+	      }
+	      else
+	      {
+	        setTimeout("type()", delay);
+	      }
+	    }
+	  }
+	}
+	function startTyping(textParam, delayParam, destinationParam)
+	{
+	  text=textParam;
+	  delay=delayParam;
+	  currentChar=1;
+	  destination=destinationParam;
+	  type();
+	}
+
+
+	</script>
+	<style>
+	@font-face{
+	font-family:"Trade Gothic W01 Bold";
+	src:url("Fonts/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix");
+	src:url("Fonts/2e9af08f-0faf-45e3-9767-78a700434af3.eot?#iefix") format("eot"),url("Fonts/d2e623ca-efc6-4557-ae55-ebb786065dcf.woff2") format("woff2"),url("Fonts/f51d24dd-8256-43c6-ba1a-6aeae9d3f262.woff") format("woff"),url("Fonts/955ee494-66b2-4eb2-8f19-bc3a088df16d.ttf") format("truetype"),url("Fonts/d5153ad4-7c93-4757-9147-640e69ec4801.svg#d5153ad4-7c93-4757-9147-640e69ec4801") format("svg");
+	}
+	body{
+		background-color: #000;
+		padding: 0;
+		margin: 0;
+	}
+	.outer.container{
+		background-color: #000;
+		position: relative;
+		float: left;
+		width: 100vw;
+		height: 100vh;
+		text-align: center;
+	}
+	.confession{
+		position: absolute;
+		color: #fff;
+		font-family: "Trade Gothic W01 Bold", Arial, sans-serif;
+		font-size: 80px;
+		line-height: 1.4;
+		width: 100%;
+		top: 50%;
+		left: 50%;
+		margin: 0;
+		-webkit-transform: translate(-50%, -50%);
+	}
+
+	</style>
+</head>
+<body>
+	<div class="outer container">
+		<a id="textDestination" onclick="startTyping('This is a confession', 50, 'textDestination');" class="confession">foobar</a>
+	</div>
+	<script>startTyping('This is a confession', 50, 'textDestination');</script>
+</body>
+</html>
