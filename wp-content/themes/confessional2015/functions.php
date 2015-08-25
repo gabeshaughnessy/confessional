@@ -25,9 +25,8 @@ require_once('functions/functions-enqueue.php');
 //enqueue menus
 require_once('functions/functions-menus.php');
 
-//job manager customizations
-require_once('functions/functions-job-manager.php');
-
+//ACF SETUP
+require_once('functions/plugins/front-end-posting.php');
 
 if ( ! isset( $content_width ) ){
     $content_width = 1080;
