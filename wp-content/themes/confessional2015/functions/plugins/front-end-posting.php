@@ -10,6 +10,7 @@ Author URI: gabesimagination.com
  
 function simple_fep($content = null) {
 	global $post;
+
  
 	// We're outputing a lot of html and the easiest way 
 	// to do it is with output buffering from php.
@@ -17,13 +18,12 @@ function simple_fep($content = null) {
  
 ?>
 <style>
-#fep-new-post label{display:inline-block;width:15%;}
-#fep-new-post input{width:60%;}
-#fep-new-post input[type="submit"]{margin-left:15%;width:30%;padding:7px;}
-#fep-new-post textarea{	display:inline-block;width:80%;vertical-align:top;}
+
 </style>
 <div id="simple-fep-postbox" class="<?php if(is_user_logged_in()) echo 'closed'; else echo 'loggedout'?>">
-		<?php do_action( 'simple-fep-notice' ); ?>
+		<?php 
+
+		do_action( 'simple-fep-notice' ); ?>
 		<div class="simple-fep-inputarea">
 			<form id="fep-new-post" name="new_post" method="post" action="<?php the_permalink(); ?>">
 				<textarea class="fep-content" name="posttext" id="fep-post-text" tabindex="1" rows="4" cols="60"></textarea>
@@ -51,9 +51,7 @@ add_shortcode('simple-fep', 'simple_fep');
  
 function simple_fep_errors(){
 ?>
-<style>
-.simple-fep-error{border:1px solid #CC0000;border-radius:5px;background-color: #FFEBE8;margin: 0 0 16px 0px;padding: 12px;}
-</style>
+
 <?php
 	global $error_array;
 	foreach($error_array as $error){
@@ -63,15 +61,24 @@ function simple_fep_errors(){
  
 function simple_fep_notices(){
 ?>
-<style>
-.simple-fep-notice{ border-radius:5px;margin: 0 0 16px 0px;padding: 12px;}
-</style>
+
 <?php
  
 	global $notice_array;
+
 	foreach($notice_array as $notice){
+					
+
 		echo '<p class="simple-fep-notice">' . $notice . '</p>';
 	}
+}
+function validPost($post_content){
+	$valid = false;
+	if($post_content == true || $post_content == 1){
+		$valid = true;
+	}
+
+	return $valid;
 }
  
 function simple_fep_add_post(){
@@ -79,6 +86,7 @@ function simple_fep_add_post(){
 		if ( !is_user_logged_in() )
 			return;
 		global $current_user;
+
  
 		$user_id		= $current_user->ID;
 		$post_content	= $_POST['posttext'];
@@ -86,9 +94,10 @@ function simple_fep_add_post(){
 
 		global $error_array;
 		$error_array = array();
- 
-		if (empty($post_title)) $error_array[]='Please add a title.';
-		if (empty($post_content)) $error_array[]='Please add some content.';
+
+		 $error_message = get_field('gi_error_message', 'option');
+
+		if (!validPost($post_content)) $error_array[]= $error_message;
  
 		if (count($error_array) == 0){
  
@@ -101,7 +110,9 @@ function simple_fep_add_post(){
  
 			global $notice_array;
 			$notice_array = array();
-			$notice_array[] = "Thans for speaking the truth. Your confession has been received. ";
+
+			 $confirmation_message = get_field('gi_confirmation_message', 'option');	
+			$notice_array[] = $confirmation_message;
 			add_action('simple-fep-notice', 'simple_fep_notices');
 		} else {
 			add_action('simple-fep-notice', 'simple_fep_errors');

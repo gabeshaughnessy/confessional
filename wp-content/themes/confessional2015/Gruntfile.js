@@ -46,11 +46,12 @@ module.exports = function(grunt) {
       src: [
         'js/modernizr.js',
         'js/flex-slider/jquery.flexslider.js',
-        'js/modules/smooth-scrolling.js',
+        /*'js/modules/smooth-scrolling.js',
         'js/modules/modal.js',
         'js/modules/hero.js',
-        'js/modules/nav.js',
-        'js/modules/ga_events.js'
+        'js/modules/nav.js',*/
+        'js/modules/ga_events.js',
+        'js/modules/hide.js'
 
       ],
       dest: 'js/app.js',

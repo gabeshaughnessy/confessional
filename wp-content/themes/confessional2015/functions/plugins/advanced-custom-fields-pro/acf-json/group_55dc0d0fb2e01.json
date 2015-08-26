@@ -1,0 +1,66 @@
+{
+    "key": "group_55dc0d0fb2e01",
+    "title": "confession settings",
+    "fields": [
+        {
+            "key": "field_55dc0fd684020",
+            "label": "Confirmation Message",
+            "name": "gi_confirmation_message",
+            "type": "textarea",
+            "instructions": "Displayed on a successful form submission",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_55dc0d22e364c",
+            "label": "Error message",
+            "name": "gi_error_message",
+            "type": "textarea",
+            "instructions": "shows if they submit an empty form",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-site-wide-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1440489080
+}

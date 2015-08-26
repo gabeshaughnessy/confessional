@@ -4,16 +4,23 @@ body{
 .page-wrapper{
     clear: both;
     max-width: 1125px;
-    background-color: #fff;
+    background-color: #000;
     overflow : hidden;
     position: relative;
-    padding: 0 40px;
-    @media screen and (max-width : 782px){
+    color: #fff;
+    padding: 40px 40px 0;
+    @media screen and (max-width : $medium-break){
         padding-top: 0;
+        font-size: .85em;
     }
     &.light-gray{
         background-color: #fafafa;
     }
+}
+#site-logo{
+    width: 140px;
+    margin: 0 auto;
+
 }
 #wpstats{
 	display: none;

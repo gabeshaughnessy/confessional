@@ -25,7 +25,7 @@ require_once('functions/functions-enqueue.php');
 //enqueue menus
 require_once('functions/functions-menus.php');
 
-//ACF SETUP
+//Front end posting and form shortcode
 require_once('functions/plugins/front-end-posting.php');
 
 if ( ! isset( $content_width ) ){

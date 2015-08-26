@@ -5,7 +5,7 @@ functions.php extension - enqueue
 
 
 add_action('wp_enqueue_scripts', 'gi_theme_enqueue');
-add_action('admin_enqueue_scripts', 'gi_admin_enqueue');
+//add_action('admin_enqueue_scripts', 'gi_admin_enqueue');
 
 $gi_style_dir_stats = stat(get_template_directory().'/css');
 $css_version = $gi_style_dir_stats['mtime'];
@@ -60,9 +60,6 @@ function gi_admin_enqueue(){
 
 function gi_ie_enqueue(){
     global $css_version, $js_version;
-    /*echo '
-        <link rel="stylesheet" href="'.get_stylesheet_directory_uri().'/css/ie.css?ver='.$css_version.'" type="text/css" media="all">
-        <script type="text/javascript" src="'.get_stylesheet_directory_uri().'/js/app_ie.min.js?ver='.$js_version.'"></script>
-        ';*/
+
     }
 ?>

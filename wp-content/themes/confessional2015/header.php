@@ -42,9 +42,9 @@ jQuery('body').addClass('ie10');
 <?php
 
     echo '<div class="page-wrapper outer container">';
-
+if(!is_single() && !is_archive()){
     echo '<div class="row">
-            <div id="site-logo" class="medium-3 columns" >
+            <div id="site-logo" >
                 <a href="/" class="logo-link" title="'.get_bloginfo('name').'">
                     <img src="'.get_bloginfo('stylesheet_directory').'/images/logo/Logo.png" width="100%" height="alt" alt="'.get_bloginfo('name').' Logo" />
                 </a>
@@ -52,6 +52,6 @@ jQuery('body').addClass('ie10');
             
             </div>';
     
-
+}
         echo '<main id="content" role="main">';
 ?>

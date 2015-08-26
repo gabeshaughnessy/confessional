@@ -1,3 +1,14 @@
+// Typography
+@font-face{
+font-family:"Trade Gothic W01 Cn_18";
+src:url("../Fonts/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix");
+src:url("../Fonts/087e5c21-3358-4cf3-9d2c-289a03a48292.eot?#iefix") format("eot"),url("../Fonts/30ebcbfa-d651-4ecd-a0a2-2bb110def1d4.woff2") format("woff2"),url("../Fonts/fb754dec-aa8f-444c-be48-868464c47ab0.woff") format("woff"),url("../Fonts/295ff20c-2b48-4fa6-be92-a53bbf9bbbb4.ttf") format("truetype"),url("../Fonts/c573d9d0-0726-4b95-aeee-fb621a299563.svg#c573d9d0-0726-4b95-aeee-fb621a299563") format("svg");
+}
+@font-face{
+font-family:"TradeGothicW01-BoldCn20_675334";
+src:url("../Fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix");
+src:url("../Fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.eot?#iefix") format("eot"),url("../Fonts/1ba28851-f34b-4cb8-bf58-6a4b160ba249.woff2") format("woff2"),url("../Fonts/5fdc935e-9e30-442a-bbe9-8d887b858471.woff") format("woff"),url("../Fonts/616c4c87-a077-43f4-a9f4-f01267c13818.ttf") format("truetype"),url("../Fonts/c901ad5f-a842-4549-a1f4-583a97f7e169.svg#c901ad5f-a842-4549-a1f4-583a97f7e169") format("svg");
+}
 body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
@@ -8,12 +19,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font-family;
-  line-height: $header-line-height;
-  margin: 0;
-  text-rendering: optimizeLegibility; // Fix the character spacing for headings
-  font-weight: 400;
-  color: $headline-color;
+  color: #fff;
 }
 .subtitle, .subheading{
   color: $headline-color;
@@ -24,27 +30,33 @@ h1 {
 }
 
 h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
+  font-size: $base-font-size * 2.5; // 16 * 2 = 32px
+  margin: 0 0 0;
 }
 
 h3 {
-  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
+  font-size: $base-font-size * 2; // 16 * 1.75 = 28px
+  margin: 0 0 0;
 }
 
 h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
+  font-size: $base-font-size * 1.75; // 16 * 1.5 = 24px
+  margin: 0 0 0;
 }
 
 h5 {
-  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
+  font-size: $base-font-size * 1.5; // 16 * 1.25 = 20px
+  margin: 0 0 0;
 }
 
 h6 {
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.25;
+  margin: 0 0 0;
 }
 
 p {
   margin: 0 0 ($base-line-height * .5);
+  font-size: $base-font-size * 1.75;
 }
 
 a {
