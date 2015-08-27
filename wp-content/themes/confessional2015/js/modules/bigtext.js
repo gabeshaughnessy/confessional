@@ -293,5 +293,5 @@
 
 
 jQuery(document).ready(function(){
-  jQuery('.bigtext').bigtext({ minfontsize: 16, maxfontsize: 60});
+  jQuery('.bigtext').bigtext({ minfontsize: 18, maxfontsize: 100});
 });

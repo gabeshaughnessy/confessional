@@ -2948,7 +2948,7 @@ jQuery(document).ready(function(){
 
 
 jQuery(document).ready(function(){
-  jQuery('.bigtext').bigtext({ minfontsize: 16, maxfontsize: 60});
+  jQuery('.bigtext').bigtext({ minfontsize: 18, maxfontsize: 100});
 });;
 jQuery(window).load(function(){
 	jQuery('.simple-fep-error').delay(3000).fadeOut('fast');
