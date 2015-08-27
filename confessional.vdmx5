@@ -237,22 +237,22 @@
 						CoALgAylFhcYGRqAAoADgASABYAG
 						WnBsYXllclNpemVUdlBvc1N1cmxU
 						aFBvc1NmcHNbezEyODAsIDc2OH0j
-						P/AAAAAAAABfEFVodHRwOi8vbG9j
+						P/AAAAAAAABfEE5odHRwOi8vbG9j
 						YWwuY29uZmVzc2lvbmFsL2NvbmZl
-						c3Npb25zL2ktZ290LWxpa2UtdGVu
-						LWNvbmZlc3Npb25zLWhlcmU/dHlw
-						ZXdyaXRlcj10cnVlIwAAAAAAAAAA
-						I0A9///gAAAA0iYnKClYJGNsYXNz
-						ZXNaJGNsYXNzbmFtZaMpKitfEBNO
-						U011dGFibGVEaWN0aW9uYXJ5XE5T
-						RGljdGlvbmFyeVhOU09iamVjdBIA
-						AYagXxAPTlNLZXllZEFyY2hpdmVy
-						AAgAEQAWAB8AKAAyADUAOgA8AEoA
-						UABXAGIAaQBxAHcAeQB7AH0AfwCB
-						AIMAiQCLAI0AjwCRAJMAngCjAKcA
-						rACwALwAxQEdASYBLwE0AT0BSAFM
-						AWIBbwF4AX0AAAAAAAACAQAAAAAA
-						AAAuAAAAAAAAAAAAAAAAAAABjw==
+						c3Npb25zP2JpZ3RleHQ9dHJ1ZSZ0
+						eXBld3JpdGVyPXRydWUmcG9zdGNv
+						dW50PTEjAAAAAAAAAAAjQD3//+AA
+						AADSJicoKVgkY2xhc3Nlc1okY2xh
+						c3NuYW1loykqK18QE05TTXV0YWJs
+						ZURpY3Rpb25hcnlcTlNEaWN0aW9u
+						YXJ5WE5TT2JqZWN0EgABhqBfEA9O
+						U0tleWVkQXJjaGl2ZXIACAARABYA
+						HwAoADIANQA6ADwASgBQAFcAYgBp
+						AHEAdwB5AHsAfQB/AIEAgwCJAIsA
+						jQCPAJEAkwCeAKMApwCsALAAvADF
+						ARYBHwEoAS0BNgFBAUUBWwFoAXEB
+						dgAAAAAAAAIBAAAAAAAAAC4AAAAA
+						AAAAAAAAAAAAAAGI
 						</data>
 						<key>clipDescription</key>
 						<string></string>
@@ -409,7 +409,7 @@
 							<key>lock</key>
 							<false/>
 							<key>name</key>
-							<string>Google Chrome-Confessions |</string>
+							<string>Google Chrome-chrome-devtools://devtools/bundled/toolbox.html?&amp;remoteBase=https://chrome-devtools-frontend.appspot.com/serve_file/@200126/&amp;can_dock=true&amp;dockSide=undocked&amp;toolbarColor=rgba(230,230,230,1)&amp;textColor=rgba(0,0,0,1)</string>
 							<key>path</key>
 							<string>/kWindowsInputs/Google Chrome/Google Chrome-Confessions |</string>
 							<key>rvt</key>
@@ -2289,7 +2289,7 @@
 				IKEAaoAeI0AAAAAAAAAA0wALAAwADQN0ABEDd6EDdYDp
 				gCChAGqAHiNAEAAAAAAAANMACwAMAA0DewARA36hA3yA
 				64AgoQBqgB4jQCAAAAAAAADTAAsADAANA4IAEQOFoQOD
-				gO2AIKEAWIAYIz/lX3Whhq0n0wALAAwADQOJABEDi6CA
+				gO2AIKEAWIAYIz+o6o83LXkG0wALAAwADQOJABEDi6CA
 				IKDTAAsADAANA40AEQOSowOOA48DkIDwgPGA8oAgowDS
 				ANMBN4BBgEKAW9MACwAMAA0DlwARA5yjATsA2QDZgF2A
 				SIBIgCCjAN0A3gDfgESARYBG0wALAAwADQOhABEDp6QA
@@ -2404,8 +2404,8 @@
 				AAwADQY5ABEGPKEGOoEBeIAgoQBqgB4jQAAAAAAAAADT
 				AAsADAANBkAAEQZDoQZBgQF6gCChAGqAHiNAEAAAAAAA
 				ANMACwAMAA0GRwARBkqhBkiBAXyAIKEAaoAeI0AgAAAA
-				AAAA0wALAAwADQZOABEGUaEGT4EBfoAgoQBYgBgjP889
-				f///+T/TAAsADAANBlUAEQZXoIAgoNMACwAMAA0GWQAR
+				AAAA0wALAAwADQZOABEGUaEGT4EBfoAgoQBYgBgjP+Kl
+				////73vTAAsADAANBlUAEQZXoIAgoNMACwAMAA0GWQAR
 				Bl6jBloGWwOQgQGBgQGCgPKAIKMA0gDTATeAQYBCgFvT
 				AAsADAANBmMAEQZoowE7ANkA2YBdgEiASIAgowDdAN4A
 				34BEgEWARtMACwAMAA0GbQARBnOkANkA2QDZATuASIBI
@@ -2679,12 +2679,27 @@
 				<key>icn</key>
 				<data>
 				iVBORw0KGgoAAAANSUhEUgAAAFAAAAArCAYAAADv9A+v
-				AAAAmElEQVRoBe3SsQ0AIADDMOD/nwFxAlndPYvVue+G
-				fQus71L4BADGIwAEGAVi7oEAo0DMPRBgFIi5BwKMAjH3
-				QIBRIOYeCDAKxNwDAUaBmHsgwCgQcw8EGAVi7oEAo0DM
-				PRBgFIi5BwKMAjH3QIBRIOYeCDAKxNwDAUaBmHsgwCgQ
-				cw8EGAVi7oEAo0DMPRBgFIi5BwKMAjE/G+IEUn9TXD0A
-				AAAASUVORK5CYII=
+				AAACnUlEQVRoBe2UTW9pYRSFl6JaRSISVW6jA8TQwEzM
+				hB/gxxo0EhNj6UikTYReBC3aqo/66l37xv0BdnIHzd7J
+				8XHOXvt997PXexy/bm8Pv5+fcWrkcjm8vr6i0+lgs9kg
+				EAhgtVrh6+sLTqcTLpcLZ2dnSKfTaLfbeH9/l7yLiwtZ
+				knnJZBKTyUSe8WYoFMJsNsPhcEAkEsHLy4vUczgc4OV2
+				u7Fer6Uu6+/3e+x2O5yfn0ve5eWlrJFKpTCfz6X229sb
+				fD6f1KWedfiftTXh0sDjwsFgEMViEff399IQGwuHw5hO
+				p4jH4wKQYDOZDOr1OkajER4eHlAul6XpbreLRCIhjREE
+				YcdiMRnIzc0N2PjHx4fUXCwWApkAqGk0GhiPx8hms6hU
+				KigUCuj3+7i7u0O1WkWpVMJwOJQ9cCi9Xg+1Wg35fF72
+				x0EzTxMujZjap6cn+P1+aYwNs6Hr62uZMN1GIMvlEq1W
+				Sza93W7BizAYfNZsNsW5V1dX4iI2Tej8Zj068egeOpPB
+				NekuAubQPj8/xX3MZU2u8fj4KHpqeVIGgwHoTubzdFDD
+				/XFwp4bjj/Bwqpg6j8fzb1P8zal6vV5pgJtjHI8XN84G
+				CY/OZTCf93j82BQ1zD82RZA8bqzN33zGfL4CWI/3CJOO
+				Z02Co0M5PA6Ez3nMo9GovGoI/fj6OIKXjZz4oQZ44ro/
+				RvbXIj+mnf/fiAFUMjeABlBJQCk3BxpAJQGl3BxoAJUE
+				lHJzoAFUElDKzYEGUElAKTcHGkAlAaXcHGgAlQSUcnOg
+				AVQSUMrNgQZQSUApNwcaQCUBpdwcaACVBJRyc6ABVBJQ
+				ys2BBlBJQCk3BxpAJQGl3BxoAJUElHJzoAFUElDKzYEG
+				UElAKTcHGkAlAaX8G2eqTvFy0NzNAAAAAElFTkSuQmCC
 				</data>
 				<key>name</key>
 				<string>Preset 1</string>
@@ -2700,112 +2715,6 @@
 	</dict>
 	<key>vidins</key>
 	<dict>
-		<key>0x1a11000005ac8510</key>
-		<dict>
-			<key>VDMXName</key>
-			<string>FaceTime HD Camera (Built-in) 2</string>
-			<key>controller</key>
-			<dict>
-				<key>audioOutputMuteButton</key>
-				<dict>
-					<key>val</key>
-					<false/>
-				</dict>
-				<key>audioOutputVolumeSlider</key>
-				<dict>
-					<key>val</key>
-					<real>0.5</real>
-				</dict>
-				<key>audioOutputsPopUpButton</key>
-				<dict>
-					<key>floatPosReceiver</key>
-					<dict>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-					<key>indexReceiver</key>
-					<dict>
-						<key>norm</key>
-						<false/>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-					<key>selectedItemName</key>
-					<string>No Play-Thru</string>
-				</dict>
-				<key>audioSourcesPopUpButton</key>
-				<dict>
-					<key>floatPosReceiver</key>
-					<dict>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-					<key>indexReceiver</key>
-					<dict>
-						<key>norm</key>
-						<false/>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-					<key>selectedItemName</key>
-					<string>No Sound</string>
-				</dict>
-				<key>pagesPopUpButton</key>
-				<dict>
-					<key>floatPosReceiver</key>
-					<dict>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-					<key>indexReceiver</key>
-					<dict>
-						<key>norm</key>
-						<false/>
-						<key>scal</key>
-						<false/>
-						<key>src</key>
-						<string>/&lt;No Src Chosen&gt;</string>
-						<key>useNFX</key>
-						<false/>
-					</dict>
-				</dict>
-				<key>recordButton</key>
-				<dict>
-					<key>val</key>
-					<false/>
-				</dict>
-				<key>stillImageButton</key>
-				<dict/>
-			</dict>
-			<key>running</key>
-			<false/>
-			<key>size</key>
-			<string>{0, 0}</string>
-			<key>uniqueID</key>
-			<string>0x1a11000005ac8510</string>
-			<key>usesDeviceCompression</key>
-			<true/>
-		</dict>
 		<key>RestVidIn</key>
 		<integer>1</integer>
 		<key>winsRunning</key>

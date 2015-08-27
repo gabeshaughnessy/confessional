@@ -399,6 +399,8 @@ article .confession p { margin: 0; padding: 0; }
 
 .big-text * { white-space: normal; }
 
+#wordsTxt { display: none; }
+
 #fep-new-post input[type="submit"] { margin: 1em auto; width: 200px; display: block; padding: .35em 1em; background-color: #eb1c23; font-size: 2em; -webkit-transition: background-color, 0.1s, color 0.1s; -moz-transition: background-color, 0.1s, color 0.1s; transition: background-color, 0.1s, color 0.1s; }
 #fep-new-post input[type="submit"]:active, #fep-new-post input[type="submit"]:hover { background-color: #940d12; color: #ddd; }
 #fep-new-post textarea { display: block; width: 80%; margin: 0 auto; min-height: 40vh; }
