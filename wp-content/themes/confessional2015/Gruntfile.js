@@ -50,7 +50,10 @@ module.exports = function(grunt) {
         'js/modules/modal.js',
         'js/modules/hero.js',
         'js/modules/nav.js',*/
+        'js/modules/sliders.js',
         'js/modules/ga_events.js',
+        'js/modules/type-in.js',
+        'js/modules/bigtext.js',
         'js/modules/hide.js'
 
       ],

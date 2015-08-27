@@ -1,1 +1,0 @@
-<?php echo '<div class="confession">'.get_the_content().'</div>'; ?>

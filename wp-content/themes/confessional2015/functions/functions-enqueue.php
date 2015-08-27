@@ -26,15 +26,17 @@ function gi_theme_enqueue() {
     wp_register_style('flexslider-css', $gi_template_dir.'/js/flex-slider/flexslider.css', array(), $css_version);
 
     // Register Javascript
-    //wp_deregister_script( 'jquery' ); - using default WordPress jQuery. It would be better to grunt a version of jQuery into app.min.js to avoid two requests here.
+    wp_deregister_script( 'jquery' );
+    wp_register_script('local-jquery', $gi_template_dir.'/js/jquery.min.js', false, $js_version);
 
 
-      wp_register_script('app-js', $gi_template_dir.'/js/app.min.js', array('jquery'), false, $js_version);
+    wp_register_script('app-js', $gi_template_dir.'/js/app.min.js', array('local-jquery'), false, $js_version);
     
 
 
     // Enqueue files
-    wp_enqueue_script('app-js', false, array('jquery'), $js_version);
+    wp_enqueue_script('local-jquery');
+    wp_enqueue_script('app-js', false, array('local-jquery'), $js_version);
     wp_enqueue_style('flexslider-css', false, array(), $css_version);
     wp_enqueue_style('app-css', false, array(), $css_version);
           

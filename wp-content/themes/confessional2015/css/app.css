@@ -394,6 +394,11 @@ strong { opacity: .95; }
 
 .upper-roman { list-style-type: upper-roman; margin: 0 0 1em 1.5em; }
 
+article .confession { font-size: 2.5em; font-family: "TradeGothicW01-BoldCn20_675334"; min-height: 80px; display: block; }
+article .confession p { margin: 0; padding: 0; }
+
+.big-text * { white-space: normal; }
+
 #fep-new-post input[type="submit"] { margin: 1em auto; width: 200px; display: block; padding: .35em 1em; background-color: #eb1c23; font-size: 2em; -webkit-transition: background-color, 0.1s, color 0.1s; -moz-transition: background-color, 0.1s, color 0.1s; transition: background-color, 0.1s, color 0.1s; }
 #fep-new-post input[type="submit"]:active, #fep-new-post input[type="submit"]:hover { background-color: #940d12; color: #ddd; }
 #fep-new-post textarea { display: block; width: 80%; margin: 0 auto; min-height: 40vh; }
@@ -405,3 +410,11 @@ strong { opacity: .95; }
 .simple-fep-notice { position: absolute; width: 100%; background-color: #000; height: 100vh; top: 122px; padding: 25vh; }
 
 article { text-align: center; }
+
+.post-nav { position: relative; height: 100vh; }
+.post-nav a { bottom: 50vh; position: absolute; font-size: 2em; }
+.post-nav .next-post-link { right: 0; }
+.post-nav .prev-post-link { left: 0; }
+
+.flexslider { background-color: transparent; border: none; }
+.flexslider li { overflow: hidden; }

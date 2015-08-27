@@ -1,20 +1,29 @@
 <?php 
 global $post;
 get_header();
+$classes = ['confession'];
+if($_GET['typewriter'] == true){
+$classes[] = 'typewriter';
+}
 
-$post_type = get_post_type($post->ID);
-
-if($post_type == 'post'){
-	get_template_part('template-singles/single-post');
-	}
-	
 if(have_posts()) : while(have_posts()) : the_post();
 
 	echo '<article>';
-		the_content();
+		echo '<div class="'.implode(" ", $classes).'">'.get_the_excerpt().'</div>'; 
 	echo '</article>';
 
+echo '<div class="post-nav">';
+	$nextPost = get_next_post();
+	if(isset($nextPost) && !empty($nextPost)){
+		echo '<a href="'.get_permalink($nextPost->ID).(in_array('typewriter', $classes) ? '?typewriter=true' : '').'" class="next-post-link">Next</a>';
+	}
+	$previousPost = get_previous_post();
+	if(isset($previousPost) && !empty($previousPost)){
+		echo '<a href="'.get_permalink($previousPost->ID).(in_array('typewriter', $classes) ? '?typewriter=true' : '').'" class="prev-post-link">Previous</a>';
+	}
+echo '</div>';
 endwhile; endif;
+
 
 get_footer();
 ?>
