@@ -1,7 +1,7 @@
 <?php
 global $post;
 get_header();
-$classes = ['confession'];
+$classes = array('confession');
 if($_GET['typewriter'] == true){
 $classes[] = 'typewriter';
 }
