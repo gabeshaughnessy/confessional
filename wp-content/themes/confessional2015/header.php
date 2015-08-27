@@ -18,7 +18,7 @@ var isIE10 = false;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title><?php wp_title('|', true, 'right'); ?></title>
 
     <link rel="apple-touch-icon-precomposed" media="handheld" href="<?php echo bloginfo('stylesheet_directory');?>/images/icons/touch-icon.png" />
