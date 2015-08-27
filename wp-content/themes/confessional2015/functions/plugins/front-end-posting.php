@@ -83,8 +83,7 @@ function validPost($post_content){
  
 function simple_fep_add_post(){
 	if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['action'] ) && $_POST['action'] == 'post' ){
-		if ( !is_user_logged_in() )
-			return;
+
 		global $current_user;
 
  
